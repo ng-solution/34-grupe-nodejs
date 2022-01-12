@@ -12,5 +12,13 @@
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/front-end-by-rimantas/34-grupe-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/front-end-by-rimantas/34-grupe-nodejs/issues"
+  },
+  "homepage": "https://github.com/front-end-by-rimantas/34-grupe-nodejs#readme"
 }
