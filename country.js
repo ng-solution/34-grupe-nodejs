@@ -10,12 +10,26 @@ console.log(__filename);
 
 (async () => {
 
+    function parseJSONtoObject(text) {
+        try {
+            const obj = JSON.parse(text);
+            return [false, obj];
+        } catch (error) {
+            return [true, {}];
+        } finally {
+            console.log('Baigiau bandyti parsinti faila...');
+        }
+    }
+
     const fullPath = path.join(__dirname, './data/country.json');
     const countryContent = await fs.readFile(fullPath, 'utf-8');
 
-    console.log(countryContent);
+    const [personError, personObj] = parseJSONtoObject(countryContent);
 
-    const personInfo = JSON.parse(countryContent);
-    console.log(personInfo);
+    if (personError) {
+        console.log('Parsinant faila ivyko klaida.');
+    } else {
+        console.log(personObj);
+    }
 
 })();
