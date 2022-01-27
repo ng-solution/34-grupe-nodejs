@@ -4,6 +4,7 @@
   "description": "First Node.JS project",
   "main": "index.js",
   "scripts": {
+    "obj": "nodemon ./obj.js",
     "dev": "nodemon ./index.js",
     "file": "nodemon ./files.js",
     "co": "nodemon ./country.js",
