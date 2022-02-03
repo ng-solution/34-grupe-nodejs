@@ -16,6 +16,7 @@ const veiksmas = 'plius';    // plius, minus, padalinus, padauginus
 
 const func = matematika[veiksmas];
 const ats = func(pirmas, antras);
+console.clear()
 console.log(`${pirmas} ${veiksmas} ${antras} yra lygu ${ats}`);
 
 // 7 plius 5 yra lygu 12
